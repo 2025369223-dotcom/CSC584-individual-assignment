@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-box">
+            <h2>Personal Profile</h2>
+            <p class="subtitle">Please complete your student profile details below</p>
+        </div>
+        
+        <form action="ProfileServlet" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Ahmad Albab" required>
+            </div>
+
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" name="studentId" placeholder="e.g. 2024123456" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="programme">Programme Code</label>
+                    <input type="text" id="programme" name="programme" placeholder="e.g. CS251" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Student Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. 2024123456@student.uitm.edu.my" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies & Interests</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="e.g. Coding, Photography, Futsal" required>
+            </div>
+
+            <div class="form-group">
+                <label for="introduction">Short Self-Introduction</label>
+                <textarea id="introduction" name="introduction" rows="3" placeholder="Write a brief introduction about yourself..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Profile</button>
+        </form>
+    </div>
+</body>
+</html>
